@@ -126,6 +126,11 @@ document.getElementById('btnOrdenarNomes').addEventListener('click', () => {
     atualizarTabela();
 });
 
+document.getElementById('btnOrdenarNotas').addEventListener('click', () => {
+    alunos.sort((a, b) => b.notaFinal - a.notaFinal);
+    atualizarTabela();
+});
+
 document.getElementById('btnAlunosPorCurso').addEventListener('click', () => {
     const porCurso = {};
     
